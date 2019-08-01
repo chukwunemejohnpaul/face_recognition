@@ -83,6 +83,7 @@ while True:
 				(startx, starty, endx, endy) = box.astype("int")
 				face = Frame[starty:endy,startx:endx]
 				score, num = reco_face(face,embeddings,model)
+				
 				print(score)
 				print("num ", num)
 				if score <= 0.5:
